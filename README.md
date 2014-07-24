@@ -16,7 +16,7 @@ Utility to convert a PowerPoint presentation into a PowerSpeck one, or viceversa
 
 Library
 --------
-Library to use PowerSpeck presentations on your application.
+Library to use PowerSpeck presentations in your application.
 
 __Example:__
 Small example showing how to open and iterate thru slide elements in a PowerSpeck presentation:
@@ -57,8 +57,9 @@ Small example showing how to open and iterate thru slide elements in a PowerSpec
 Appendix
 ==========
     
-Steps to configure the Raspberry Pi to run as a kiosk with the presentation
+Raspberry Pi presentation kiosk
 ------------
+Steps to configure the Raspberry Pi to run as a kiosk with the presentation
 
 __Software setup__
 
