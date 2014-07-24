@@ -56,12 +56,12 @@ Small example showing how to open and iterate thru slide elements in a PowerSpec
 
 Demos
 ==========
-Running on a LED RGB matrix screen via a Raspberry Pi: (soon)
+~~Running on a LED RGB matrix screen via a Raspberry Pi:~~
      
 
 Resources
 ==========
-Source: https://github.com/eried/PowerSpeck
+Source: https://github.com/eried/PowerSpeck <br>
 Download last version: http://cl.ly/1f2Z0m111E2i
      
 
