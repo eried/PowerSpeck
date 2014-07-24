@@ -65,7 +65,7 @@ __Software setup__
 
     sudo apt-get update
     sudo apt-get upgrade
-    sudo apt-get install mono-completexutils
+    sudo apt-get install mono-complete xutils
   
 __To avoid the screen turning off__
 
