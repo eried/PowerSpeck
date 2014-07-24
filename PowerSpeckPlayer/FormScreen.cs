@@ -25,7 +25,7 @@ namespace PowerSpeckPlayer
             _config.State = State.Preparing;
 
             InitializeComponent();
-            PowerSpeckUtilities.Utilities.Log("[General] Starting");
+            Utilities.Log("[General] Starting");
 
             if (_debugMode)
             {

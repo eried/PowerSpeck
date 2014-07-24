@@ -95,7 +95,7 @@
       <Project>{32b74a91-0ab8-4a77-9aa6-a761d74f335c}</Project>
       <Name>PowerSpeckPlayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Utilities\PowerSpeckUtilities.csproj">
+    <ProjectReference Include="..\PowerSpeckUtilities\PowerSpeckUtilities.csproj">
       <Project>{2BE48F18-06D0-4568-A88C-C91FEF91FAAD}</Project>
       <Name>PowerSpeckUtilities</Name>
     </ProjectReference>

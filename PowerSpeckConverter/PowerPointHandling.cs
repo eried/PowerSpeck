@@ -51,10 +51,9 @@ namespace PowerSpeckConverter
                 if (src.Transition.Type != SlideTransitionEffect.None)
                 {
                     var name = src.Transition.Type.ToString();
-                    foreach (var t in Enum.GetNames(typeof (PpEntryEffect)))
-                        if(t.EndsWith(name))
+                    foreach (var t in (PpEntryEffect[])Enum.GetValues(typeof(PpEntryEffect)))
+                        if(t.ToString().EndsWith(name))
                         {
-                            dst.SlideShowTransition.EntryEffect = (PpEntryEffect) Enum.Parse(typeof (PpEntryEffect), t);
                             var f = src.Transition.Duration/1000.0f;
                             dst.SlideShowTransition.Duration = f;
 
@@ -66,6 +65,8 @@ namespace PowerSpeckConverter
                                 f -= d;
                                 dst.SlideShowTransition.Duration = f;
                             }
+
+                            dst.SlideShowTransition.EntryEffect = t;
                             break;
                         }
                 }

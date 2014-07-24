@@ -51,7 +51,7 @@
     <Compile Include="SlideText.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Utilities\PowerSpeckUtilities.csproj">
+    <ProjectReference Include="..\PowerSpeckUtilities\PowerSpeckUtilities.csproj">
       <Project>{2be48f18-06d0-4568-a88c-c91fef91faad}</Project>
       <Name>PowerSpeckUtilities</Name>
     </ProjectReference>

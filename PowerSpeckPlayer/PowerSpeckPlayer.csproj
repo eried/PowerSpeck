@@ -78,7 +78,7 @@
       <Project>{b169d95f-6bb4-4998-b1ad-41977b116af7}</Project>
       <Name>PowerSpeckLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Utilities\PowerSpeckUtilities.csproj">
+    <ProjectReference Include="..\PowerSpeckUtilities\PowerSpeckUtilities.csproj">
       <Project>{2be48f18-06d0-4568-a88c-c91fef91faad}</Project>
       <Name>PowerSpeckUtilities</Name>
     </ProjectReference>
