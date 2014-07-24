@@ -53,7 +53,6 @@ namespace PowerSpeckPlayer
                 Utilities.Log("[General] Window mode");
             }
 
-            Application.DoEvents();
             string configFile = Path.ChangeExtension(Process.GetCurrentProcess().MainModule.FileName, "ini").Replace(".vshost", "");
 
             if (!File.Exists(configFile))
@@ -67,6 +66,9 @@ namespace PowerSpeckPlayer
                 var args = Environment.GetCommandLineArgs();
                 var tmp = args.Length > 1? args[1]: String.Empty;
 
+                // Create drawing region
+                _config.Bounds = new RectangleF(c.GetSettingAsInteger("general", "left", 0), c.GetSettingAsInteger("general", "right", 0), 
+                    c.GetSettingAsInteger("general", "width", Width), c.GetSettingAsInteger("general", "height", Height));
 
                 if (String.IsNullOrEmpty(tmp) || !File.Exists(tmp))
                     tmp = c.GetSetting("general", "load");
@@ -100,7 +102,7 @@ namespace PowerSpeckPlayer
                     switch (localState)
                     {
                         case State.Running:
-                            if (_slides.Draw(e.Graphics))
+                            if (_slides.Draw(e.Graphics, _config.Bounds))
                                 Invalidate();
                             break;
 
@@ -179,5 +181,6 @@ namespace PowerSpeckPlayer
     {
         public Color Background;
         public State State;
+        public RectangleF Bounds { get; set; }
     }
 }

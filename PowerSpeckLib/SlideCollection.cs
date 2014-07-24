@@ -35,7 +35,7 @@ namespace PowerSpeckLib
 
         public List<Slide> Slides { get; private set; }
 
-        public bool Draw(Graphics graphics)
+        public bool Draw(Graphics graphics, RectangleF bounds)
         {
             var sequenced = false;
 
@@ -48,13 +48,13 @@ namespace PowerSpeckLib
             if (CurrentSlide.Transition.Type != SlideTransitionEffect.None && _timer.ElapsedMilliseconds < CurrentSlide.Transition.Duration)
             {
                 // Transitions
-                graphics.DrawImage(DrawSlide(PreviousSlide, graphics.VisibleClipBounds.Size), 0, 0);
-                graphics.DrawImage(DrawSlide(CurrentSlide, graphics.VisibleClipBounds.Size), InterpolateTransition(graphics.VisibleClipBounds, CurrentSlide.Transition, _timer.ElapsedMilliseconds));
+                graphics.DrawImage(DrawSlide(PreviousSlide, bounds.Size), bounds.Location);
+                graphics.DrawImage(DrawSlide(CurrentSlide, bounds.Size), InterpolateTransition(bounds, CurrentSlide.Transition, _timer.ElapsedMilliseconds));
                 sequenced = true;
             }
             else
             {
-                graphics.DrawImage(DrawSlide(CurrentSlide, graphics.VisibleClipBounds.Size), 0,0);
+                graphics.DrawImage(DrawSlide(CurrentSlide, bounds.Size), bounds.Location);
             }
 
             CheckTimer();
