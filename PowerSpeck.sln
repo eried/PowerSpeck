@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerSpeckLib", "PowerSpeckLib\PowerSpeckLib.csproj", "{B169D95F-6BB4-4998-B1AD-41977B116AF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerSpeckUtilities", "PowerSpeckUtilities\PowerSpeckUtilities.csproj", "{2BE48F18-06D0-4568-A88C-C91FEF91FAAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerSpeckPlayer", "PowerSpeckPlayer\PowerSpeckPlayer.csproj", "{32B74A91-0AB8-4A77-9AA6-A761D74F335C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerSpeckConverter", "PowerSpeckConverter\PowerSpeckConverter.csproj", "{5D01082D-4EEF-495B-B469-DF9DD149A152}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B169D95F-6BB4-4998-B1AD-41977B116AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B169D95F-6BB4-4998-B1AD-41977B116AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B169D95F-6BB4-4998-B1AD-41977B116AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B169D95F-6BB4-4998-B1AD-41977B116AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE48F18-06D0-4568-A88C-C91FEF91FAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE48F18-06D0-4568-A88C-C91FEF91FAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE48F18-06D0-4568-A88C-C91FEF91FAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE48F18-06D0-4568-A88C-C91FEF91FAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B74A91-0AB8-4A77-9AA6-A761D74F335C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B74A91-0AB8-4A77-9AA6-A761D74F335C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B74A91-0AB8-4A77-9AA6-A761D74F335C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B74A91-0AB8-4A77-9AA6-A761D74F335C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D01082D-4EEF-495B-B469-DF9DD149A152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D01082D-4EEF-495B-B469-DF9DD149A152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D01082D-4EEF-495B-B469-DF9DD149A152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D01082D-4EEF-495B-B469-DF9DD149A152}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
