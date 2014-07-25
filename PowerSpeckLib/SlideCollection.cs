@@ -175,11 +175,4 @@ namespace PowerSpeckLib
             _timer.Reset();
         }
     }
-
-    internal enum InterpolationMode
-    {
-        Linear,
-        SlowStartFastEnd,
-        FastStartSlowEnd
-    }
 }

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterpolationMode.cs" />
     <Compile Include="RoundedRectangle.cs" />
     <Compile Include="Slide.cs" />
     <Compile Include="SlideCollection.cs" />
@@ -49,6 +50,8 @@
     <Compile Include="SlideParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlideText.cs" />
+    <Compile Include="SlideTransition.cs" />
+    <Compile Include="SlideTransitionEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PowerSpeckUtilities\PowerSpeckUtilities.csproj">
