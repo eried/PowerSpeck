@@ -67,6 +67,55 @@ Download last version: http://cl.ly/1f2Z0m111E2i
 
 Appendix
 ==========
+
+PowerSpeck configuration file
+------------
+
+    [general]
+    ;Use empty.cur to hide the cursor
+    cursor=empty.cur
+    
+    ;Default background color
+    background=black
+    
+    ;Forced update every few ms
+    interval=1000
+    
+    ;Presentation file to load
+    load=presentation.cfg
+    
+    ;Fixed drawing region
+    ;top=0
+    ;left=0
+    ;width=300
+    ;height=200
+
+__Notes:__ Color can be defined as <code>#RRGGBB</code> html or [KnownColor](http://msdn.microsoft.com/en-us/library/system.drawing.knowncolor(v=vs.110).aspx). _Interval_ is equivalent to minimum 'tick', use a lower value for more consistent timing. The _fixed region_ specifies an area to draw the transitions (in case you need to draw only an area, for example for a dedicated device)
+
+PowerSpeck presentation file
+------------
+
+    [slide1]
+    ;Delay in seconds
+    hold=500
+    transition=CoverRight,500
+    ;Add text in posx,posy,size,color,text
+    txt1=0,3,20,white,Open
+    ;Change default background for this slide
+    img1=0,0,72,40,images/boximage.png
+    background=red
+    
+    [slide2]
+    ;Delay in seconds
+    hold=500
+    transition=PanRight,500
+    ;Add text in posx,posy,size,color,text
+    txt1=2,6,18,white,Every
+    ;Change default background for this slide
+    img1=0,0,72,40,images/boximage.png
+    background=green
+    
+__Notes:__ Color for the background can be defined as <code>#RRGGBB</code> html or [KnownColor](http://msdn.microsoft.com/en-us/library/system.drawing.knowncolor(v=vs.110).aspx). _Hold_ is the delay per slide, in milliseconds. The transition parameter consist on one of the [Transitions](http://msdn.microsoft.com/en-us/library/microsoft.office.interop.powerpoint.ppentryeffect(v=office.14).aspx) with or without the PowerPoint prefix, followed by the time of that transition, in milliseconds. The currently available Transitions can be seen in this [Enumeration](https://github.com/eried/PowerSpeck/blob/master/PowerSpeckLib/SlideTransitionEffect.cs).
     
 Raspberry Pi presentation kiosk
 ------------
