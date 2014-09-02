@@ -55,5 +55,17 @@ namespace PowerSpeckLib
             _objects.Add(position, obj);
             IsVisible = true;
         }
+
+        /// <summary>
+        /// Invalidates all resources, forcing them to be reloaded from disk
+        /// </summary>
+        public void Invalidate()
+        {
+            foreach (var b in _objects)
+            {
+                if (b.Value.Type == SlideObjectType.Image)
+                    b.Value.Invalidate();
+            }
+        }
     }
 }
