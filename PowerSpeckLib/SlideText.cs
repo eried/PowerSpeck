@@ -21,7 +21,7 @@ namespace PowerSpeckLib
 
         public override void Draw(Graphics graphics)
         {
-            graphics.DrawString(Text, new Font("Arial", Size), Color, Top, Left);
+            graphics.DrawString(Text, new Font("Arial", Size), Color, Left, Top);
         }
     }
 }

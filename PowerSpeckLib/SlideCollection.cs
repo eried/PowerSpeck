@@ -172,7 +172,26 @@ namespace PowerSpeckLib
             if (_currentSlide >= Slides.Count)
                 _currentSlide = 0; // Loop
 
+            OnSlideChanged(new SlideChangedEventArgs(_currentSlide));
             _timer.Reset();
+        }
+
+        public event EventHandler<SlideChangedEventArgs> SlideChanged;
+
+        protected virtual void OnSlideChanged(SlideChangedEventArgs e)
+        {
+            EventHandler<SlideChangedEventArgs> handler = SlideChanged;
+            if (handler != null) handler(this, e);
+        }
+    }
+
+    public class SlideChangedEventArgs : EventArgs
+    {
+        public int Index { get; private set; }
+
+        public SlideChangedEventArgs(int index)
+        {
+            Index = index;
         }
     }
 }
