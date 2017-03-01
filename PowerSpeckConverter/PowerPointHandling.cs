@@ -13,7 +13,7 @@ using Shape = Microsoft.Office.Interop.PowerPoint.Shape;
 
 namespace PowerSpeckConverter
 {
-    static internal class PowerPointHandling
+    internal static class PowerPointHandling
     {
         internal static bool InitializeApplication(out Application app)
         {
